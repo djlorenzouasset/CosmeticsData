@@ -26,4 +26,4 @@ If you want you can download the [latest release](https://github.com/djlorenzoua
 
 # Credits
 
-- Logger made by [TigerHyper](https://github.com/XTigerHyperX)
+- Logger made by [XTigerHyper](https://github.com/XTigerHyperX)
