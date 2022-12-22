@@ -1,4 +1,5 @@
 ﻿using System.Runtime.CompilerServices;
+// --------------- code from XTigerHyperX --------------- //
 
 namespace CosmeticsData.Utils;
 
