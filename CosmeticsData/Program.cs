@@ -35,7 +35,7 @@ namespace CosmeticsData
             var x = JsonConvert.DeserializeObject<Settings>(setting);
 
             var watch = Stopwatch.StartNew();
-            getCosmetics(x.Language);
+            getCosmetics(x.Language); // return 0 istead an exception - return 1 if successfull
             watch.Stop();
             var elapsedMs = watch.ElapsedMilliseconds;
             Logger.InitilizeSuccess($"\n\nTask executed in {elapsedMs}ms");
@@ -55,12 +55,12 @@ namespace CosmeticsData
             }
             else
             {
-                Logger.InitilizeSuccess($"Request with status code {final.status} OK");
+                Logger.InitilizeSuccess($"Request with status code [{final.status}(OK)]");
                 Logger.InitilizeInfo($"Current build: {final.data.build}");
-                Thread.Sleep(300);
+
                 foreach (var x in final.data.items)
                 {
-                    Logger.InitilizeProccess($"Downloading image for \"{x.name}\" with path \"{x.path}\"");
+                    Logger.InitilizeProccess($"Downloading image for \"{x.name}\"");
                     using (var _client = new RestClient(x.images.icon))
                     {
                         var _req = new RestRequest();
