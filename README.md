@@ -1,6 +1,6 @@
 # Cosmetics Data
 
-CosmeticsData is a program made in C# (my first project) that allow you to <b>generate all new cosmetics added in the last patch using [Fortnite-API](https://fortnite-api.com).</b>
+CosmeticsData is a program made in C# that allow you to <b>generate all new cosmetics icons added in the last patch using [Fortnite-API](https://fortnite-api.com).</b>
 
 <img src="https://cdn.discordapp.com/attachments/901323789890093056/1033775598797082704/unknown.png" alt="CosmeticsData">
 
